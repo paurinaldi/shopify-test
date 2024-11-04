@@ -37,6 +37,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "h1 {color: #B43360}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",

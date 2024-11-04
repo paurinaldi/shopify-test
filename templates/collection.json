@@ -12,7 +12,7 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        "h2{color: #B43360}"
+        "h1 {color: #b43360;}"
       ],
       "settings": {
         "show_collection_description": true,
