@@ -37,7 +37,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/anime-manga-store-near-me-min_1100x_6d04d676-f40e-4fc7-b77f-63f7afaf85e7.webp",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 60,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -118,7 +118,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
