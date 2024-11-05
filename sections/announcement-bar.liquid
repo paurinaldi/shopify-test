@@ -33,7 +33,7 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ block.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank -%}
+        {% comment %} {%- if section.blocks.first.settings.text != blank -%}
           {%- if section.blocks.first.settings.link != blank -%}
             <a
               href="{{ section.blocks.first.settings.link }}"
@@ -49,6 +49,13 @@
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
           {%- endif -%}
+        {%- endif -%} {% endcomment %}
+        {%- if section.blocks.first.settings.text != blank -%}
+          <div class="announcement-bar__message-wrapper">
+            <p class="announcement-bar__message h5">
+              <span class="announcement-bar__message-content">{{ section.blocks.first.settings.text | escape }}</span>
+            </p>
+          </div>
         {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
