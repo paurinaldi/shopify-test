@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Get your favourite Manga",
             "heading_size": "h0"
           }
         },
@@ -23,7 +23,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/mangas",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -36,7 +36,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner.jpg",
+        "image": "shopify://shop_images/anime-manga-store-near-me-min_1100x_6d04d676-f40e-4fc7-b77f-63f7afaf85e7.webp",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
@@ -55,7 +55,7 @@
         "heading_99inyL": {
           "type": "heading",
           "settings": {
-            "heading": "Camiseta",
+            "heading": "Collectibles",
             "heading_size": "h0"
           }
         },
@@ -70,7 +70,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop",
-            "button_link": "shopify://products/camiseta",
+            "button_link": "shopify://collections/collectibles",
             "button_style_secondary": false
           }
         }
@@ -81,10 +81,10 @@
         "button_BjdtdX"
       ],
       "custom_css": [
-        "h2 {color: #b43360;}"
+        "h2 {color: #367e75;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/025ar_verde_colegial.jpg",
+        "image": "shopify://shop_images/reiplush.webp",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -102,7 +102,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {color: #b43360;}"
+        "h2 {color: #367e75;}"
       ],
       "settings": {
         "title": "Featured products",
