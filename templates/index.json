@@ -101,9 +101,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [
-        "h2 {color: #393e4f;}"
-      ],
       "settings": {
         "title": "Featured products",
         "heading_size": "h1",
@@ -129,11 +126,31 @@
         "padding_top": 68,
         "padding_bottom": 40
       }
+    },
+    "1730827996111e3d0b": {
+      "type": "apps",
+      "blocks": {
+        "trustoo_io_reviews_barrage_carousel_7NxMDT": {
+          "type": "shopify://apps/trustoo-io-reviews/blocks/barrage-carousel/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "trustoo_io_reviews_barrage_carousel_7NxMDT"
+      ],
+      "custom_css": [
+        "div {padding: 0px}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner",
     "image_with_text_U8chUg",
-    "featured_collection"
+    "featured_collection",
+    "1730827996111e3d0b"
   ]
 }
