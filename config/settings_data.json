@@ -411,5 +411,14 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".button {transition: all 0.3s ease;}",
+      ".button:hover {transform: scale(1.1); box-shadow: 0 5px 15px rgba(0,0,0,0.3);}",
+      "/* Animación de rotación */.button-rotate:hover {transform: rotate(5deg);}",
+      "/* Animación de brillo */.button-shine:hover {background: linear-gradient(to right, #your-color 0%, #lighter-color 50%, #your-color 100%); background-size: 200% auto; animation: shine 1.5s linear infinite;}",
+      "@keyframes shine {to {background-position: 200% center; }}"
+    ]
   }
 }
