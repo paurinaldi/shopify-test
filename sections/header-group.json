@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Welcome",
             "link": ""
           }
         }
@@ -25,8 +25,11 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-a1d23af2-b5df-4824-a07b-a691654c01e8",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -38,7 +41,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "span {color: #b43360;}"
+        "span {color: #367e75;}"
       ],
       "settings": {
         "logo_position": "middle-left",
