@@ -101,6 +101,9 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {color: #393e4f;}"
+      ],
       "settings": {
         "title": "Featured products",
         "heading_size": "h1",
@@ -140,7 +143,7 @@
         "trustoo_io_reviews_barrage_carousel_7NxMDT"
       ],
       "custom_css": [
-        "div {padding: 0px}"
+        "div {padding: 0px;}"
       ],
       "settings": {
         "include_margins": true
