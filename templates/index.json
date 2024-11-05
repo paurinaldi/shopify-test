@@ -81,7 +81,7 @@
         "button_BjdtdX"
       ],
       "custom_css": [
-        "h2 {color: #367e75;}"
+        "h2 {color: #393e4f;}"
       ],
       "settings": {
         "image": "shopify://shop_images/reiplush.webp",
@@ -102,7 +102,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {color: #367e75;}"
+        "h2 {color: #393e4f;}"
       ],
       "settings": {
         "title": "Featured products",
@@ -126,8 +126,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "padding_top": 68,
+        "padding_bottom": 40
       }
     }
   },

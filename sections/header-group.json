@@ -41,7 +41,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "span {color: #367e75;}"
+        "span {color: #393E4F;}"
       ],
       "settings": {
         "logo_position": "middle-left",
