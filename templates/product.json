@@ -70,10 +70,13 @@
         "description",
         "share"
       ],
+      "custom_css": [
+        "h1, span:first-child {color: #393e4f;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
@@ -83,7 +86,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 32
       }
     },
     "related-products": {
