@@ -1,3 +1,5 @@
+{{ 'custom-section.css' | asset_url | stylesheet_tag }}
+
 <div class="custom-section">
     <div class="custom-section__content">
       <div class="custom-section__text">
@@ -12,31 +14,19 @@
         {% endif %}
       </div>
     </div>
-  </div>
 
-  <style>
-    .custom-section {
-      padding: 40px 20px;
-    }
-    .custom-section__content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .custom-section__text,
-    .custom-section__image {
-      flex: 1 1 300px;
-      margin: 20px;
-    }
-    .custom-section__image img,
-    .custom-section__image .placeholder-svg {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'button' -%}
+            <div class="custom-section__button" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.button_link }}" class="button button--primary"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %}>
+                {{ block.settings.button_label | escape }}
+              </a>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
 
   {% schema %}
   {
@@ -60,10 +50,35 @@
         "label": "Imagen"
       }
     ],
+    "blocks": [
+        {
+          "type": "button",
+          "name": "Botón",
+          "limit": 1,
+          "settings": [
+            {
+              "type": "text",
+              "id": "button_label",
+              "default": "Botón",
+              "label": "Etiqueta del botón"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "Enlace del botón"
+            }
+          ]
+        }
+      ],
     "presets": [
       {
         "name": "Sección Personalizada",
-        "category": "Custom"
+        "category": "Custom",
+        "blocks": [
+        {
+          "type": "button"
+        }
+      ]
       }
     ]
   }
