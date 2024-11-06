@@ -1,0 +1,70 @@
+<div class="custom-section">
+    <div class="custom-section__content">
+      <div class="custom-section__text">
+        <h2>{{ section.settings.title }}</h2>
+        {{ section.settings.text }}
+      </div>
+      <div class="custom-section__image">
+        {% if section.settings.image != blank %}
+          <img src="{{ section.settings.image | img_url: '600x' }}" alt="{{ section.settings.image.alt | escape }}">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .custom-section {
+      padding: 40px 20px;
+    }
+    .custom-section__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .custom-section__text,
+    .custom-section__image {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+    .custom-section__image img,
+    .custom-section__image .placeholder-svg {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+  {% schema %}
+  {
+    "name": "Sección Personalizada",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "Mi Sección Personalizada"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Texto",
+        "default": "<p>Este es el contenido editable de mi sección personalizada.</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Imagen"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Sección Personalizada",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
