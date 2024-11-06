@@ -106,7 +106,7 @@
       ],
       "settings": {
         "title": "Featured products",
-        "heading_size": "h0",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -151,6 +151,9 @@
     },
     "custom_section_hUxj4g": {
       "type": "custom-section",
+      "custom_css": [
+        "h2 {color: #393e4f;}"
+      ],
       "settings": {
         "title": "Mi Sección Personalizada",
         "heading_size": "h1",
