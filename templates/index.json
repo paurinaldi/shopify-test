@@ -148,12 +148,33 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "custom_section_hUxj4g": {
+      "type": "custom-section",
+      "blocks": {
+        "button_nVGAiY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Botón",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_nVGAiY"
+      ],
+      "settings": {
+        "title": "Mi Sección Personalizada",
+        "text": "<p>Este es el <strong>contenido</strong> editable de mi sección personalizada.</p>",
+        "image": "shopify://shop_images/sakura_toy.jpg"
+      }
     }
   },
   "order": [
     "image_banner",
     "image_with_text_U8chUg",
     "featured_collection",
-    "1730827996111e3d0b"
+    "1730827996111e3d0b",
+    "custom_section_hUxj4g"
   ]
 }
