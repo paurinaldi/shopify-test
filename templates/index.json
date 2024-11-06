@@ -152,13 +152,13 @@
     "custom_section_hUxj4g": {
       "type": "custom-section",
       "custom_css": [
-        "h2, p {color: #393e4f;}"
+        "h2,p {color: #393e4f;}"
       ],
       "settings": {
         "title": "Mi Sección Personalizada",
         "color_scheme": "scheme-1",
         "heading_size": "h1",
-        "description": "<p>Este es el <strong>contenido</strong> editable de mi sección personalizada.</p>",
+        "description": "<p>Este es el <strong>contenido</strong> <strong>editable</strong> de mi sección personalizada.</p>",
         "image": "shopify://shop_images/sakura_toy.jpg",
         "padding_x": 20,
         "padding_y": 36
