@@ -7,7 +7,7 @@
         <h2 class="{{ section.settings.heading_size | default: 'h1' }}">
           {{ section.settings.title | escape }}
         </h2>
-        <p>{{ section.settings.description }}</p>
+        {{ section.settings.description }}
       </div>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -100,7 +100,7 @@
       "type": "richtext",
       "id": "description",
       "label": "Descripción",
-      "default": "Este es el contenido editable de mi sección personalizada."
+      "default": "<p>Este es el contenido editable de mi sección personalizada.</p>"
     },
     {
       "type": "image_picker",
