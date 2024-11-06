@@ -151,22 +151,13 @@
     },
     "custom_section_hUxj4g": {
       "type": "custom-section",
-      "blocks": {
-        "button_nVGAiY": {
-          "type": "button",
-          "settings": {
-            "button_label": "Botón",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_nVGAiY"
-      ],
       "settings": {
         "title": "Mi Sección Personalizada",
-        "text": "<p>Este es el <strong>contenido</strong> editable de mi sección personalizada.</p>",
-        "image": "shopify://shop_images/sakura_toy.jpg"
+        "heading_size": "h1",
+        "description": "<p>Este es el <strong>contenido</strong> editable de mi sección personalizada.</p>",
+        "image": "shopify://shop_images/sakura_toy.jpg",
+        "padding_x": 20,
+        "padding_y": 36
       }
     }
   },
