@@ -135,8 +135,7 @@
       "blocks": {
         "trustoo_io_reviews_barrage_carousel_7NxMDT": {
           "type": "shopify://apps/trustoo-io-reviews/blocks/barrage-carousel/c8f15077-6475-4e86-ad06-b66038d5ba2c",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -158,10 +157,47 @@
         "title": "Mi Sección Personalizada",
         "color_scheme": "scheme-1",
         "heading_size": "h1",
-        "description": "<p>Este es el <strong>contenido</strong> <strong>editable</strong> de mi sección personalizada.</p>",
+        "description": "Este es el contenido editable de mi sección personalizada.",
         "image": "shopify://shop_images/sakura_toy.jpg",
         "padding_x": 20,
         "padding_y": 36
+      }
+    },
+    "custom_slider_kyaLJb": {
+      "type": "custom-slider",
+      "blocks": {
+        "slide_YHAhP7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/sasuke.jpg",
+            "title": "Sasuke",
+            "text": "lorem ipsum"
+          }
+        },
+        "slide_j6ETAq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/reiplush.webp",
+            "title": "Rei",
+            "text": "lorem ipsum"
+          }
+        },
+        "slide_qycWHc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/sakura_toy.jpg",
+            "title": "sakura",
+            "text": "pum"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YHAhP7",
+        "slide_j6ETAq",
+        "slide_qycWHc"
+      ],
+      "settings": {
+        "title": "hola"
       }
     }
   },
@@ -170,6 +206,7 @@
     "image_with_text_U8chUg",
     "featured_collection",
     "1730827996111e3d0b",
-    "custom_section_hUxj4g"
+    "custom_section_hUxj4g",
+    "custom_slider_kyaLJb"
   ]
 }
