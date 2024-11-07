@@ -1,0 +1,74 @@
+{{ 'custom-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="slider-container" id="imageSlider">
+    {% for block in section.blocks limit:3 %}
+      <div class="slider-slide {% if forloop.first %}active{% endif %}">
+        {% if block.settings.image %}
+          {{ block.settings.image | image_url: width: 1500 | image_tag: class: 'slider-image', loading: 'lazy' }}
+        {% else %}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'slider-image placeholder' }}
+        {% endif %}
+        <div class="slider-content">
+          <h2 class="slider-title">{{ block.settings.title }}</h2>
+          <p class="slider-text">{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+{% schema %}
+{
+  "name": "Image Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título de la sección",
+      "default": "Nuestro Slider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título",
+          "default": "Título del slide"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Texto",
+          "default": "Texto del slide"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Slider",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
